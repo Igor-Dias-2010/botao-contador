@@ -1,6 +1,11 @@
 let numero = 0
+let number = 0
 function mais() {
     numero += 1
+    render()
+}
+function mais1(){
+    number += 1
     render()
 }
 function reset() {
@@ -8,12 +13,9 @@ function reset() {
     render()
 }
 function render() {
-    document.querySelector("button").innerText = `total ${numero}`
-    // p.innerHTML = numero
-
-    // const zero = document.querySelector("#zero")
-    // zero.innerHTML = numero
-
-    // const zero2 = document.querySelector("#zero2")
-    // zero2.innerHTML = 
+    document.querySelector("button").innerText = `total ${numero}`;
+    const zero3 = document.querySelector("#zero3")
+    zero3.innerText = number
+    const zero = document.querySelector("#zero")
+    zero.innerText = numero
 }
